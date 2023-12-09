@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+
+        <nav>
+            <ul id="menuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active-page" href="car-catalog.html">Cars</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+
+        <div class="left-nav-bar">
+            <a><img src="img/SearchIcon.svg" alt="Search" onclick="openSearch()"></a>
+            <a href="cart.html"><img src="img/ShoppingCartIcon.svg" alt="Shopping Cart"></a>
+            <a><img src="img/MenuIcon.svg" alt="Menu" class="menu-icon" onclick="menutoggle()"></a>
+        </div>
+
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <header>
+            <h1>All Cars</h1>
+            <select style="width: auto;">
+                <option>Default Sorting</option>
+                <option>Sort by price</option>
+                <option>Sort by popularity</option>
+                <option>Sort by rating</option>
+                <option>Sort by sale</option>
+            </select>
+        </header>
+
+        <div class="category-btn">
+            <span>Cabriolet</span>
+            <span>Coupe</span>
+            <span>Station Wagon</span>
+            <span>Hatchback</span>
+            <span>Pick-Up</span>
+            <span>Sedans</span>
+            <span>SUV</span>
+            <span>Offroad</span>
+            <span>MPV</span>
+            <span>Cargo VAN</span>
+        </div>
+
+        <div class="row">
+            <aside class="column">
+                <h3>Filter</h3>
+                <div class="search-parametr-box">
+                    <select name="Body type:" title="Select Body Type">
+                        <option value="Body types">Body types</option>
+                        <option value="Sedans">Sedans</option>
+                        <option value="Hatchbacks">Hatchbacks</option>
+                        <option value="Crossovers">Crossovers</option>
+                        <option value="Coupes">Coupes</option>
+                        <option value="Wagons">Wagons</option>
+                        <option value="Pickups">Pickups</option>
+                    </select>
+                </div>
+                <div class="search-parametr-box">
+                    <select name="By Brand" title="Select Brand">
+                        <option value="By Brand:">By Brand</option>
+                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Ford">Ford</option>
+                    </select>
+                </div>
+                <div class="search-parametr-box">
+                    <select name="Target Audience" title="Target Audience">
+                        <option value="Target Audience">Target Audience</option>
+                        <option value="Family Cars">Family Cars</option>
+                        <option value="Sports Cars">Sports Cars</option>
+                        <option value="Business Class">Business Class</option>
+                        <option value="Economy Class">Economy Class</option>
+                        <option value="Electric Vehicles">Electric Vehicles</option>
+                    </select>
+                </div>
+                <div class="search-parametr-box">
+                    <select name="Power Source" title="Power Source">
+                        <option value="Power Source">Power Source</option>
+                        <option value="Gasoline">Gasoline</option>
+                        <option value="Diesel">Diesel</option>
+                        <option value="Electric">Electric</option>
+                        <option value="Hybrids">Hybrids</option>
+                    </select>
+                </div>
+                <div class="search-parametr-box">
+                    <select name="Price" title="Price">
+                        <option value="Price up to">Price up to</option>
+                        <option value="50 000 Kc">50 000 Kc</option>
+                        <option value="100 000 Kc">100 000 Kc</option>
+                        <option value="200 000 Kc">200 000 Kc</option>
+                        <option value="300 000 Kc">300 000 Kc</option>
+                        <option value="500 000 Kc">500 000 Kc</option>
+                        <option value="1 000 000 Kc">1 000 000 Kc</option>
+                        <option value="Unlimeted"></option>
+                    </select>
+                </div>
+            </aside>
+            <section class="column" style="width: 100%;">
+                <section class="item-catalog">
+                    <article class="item-card">
+                        <div class="item-image">
+                            <a href="#"><img src="img/car1.png" alt="car #1"></a>
+                        </div>
+                        <div class="item-info">
+                            <h3><a href="#">CAR #1</a></h3>
+                            <table class="item-table">
+                                <tr>
+                                    <td>Transmission</td>
+                                    <td>Automatic</td>
+                                </tr>
+                                <tr>
+                                    <td>Power</td>
+                                    <td>100kw</td>
+                                </tr>
+                                <tr>
+                                    <td>Fuel</td>
+                                    <td>Diesel</td>
+                                </tr>
+                                <tr>
+                                    <td>Drive type</td>
+                                    <td>4x4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <a href="#" class="btn">$50 000</a>
+                    </article>
+                </section>
+                <div class="page-btn">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>&#8594;</span>
+                </div>
+            </section>
+        </div>
+
+    </main>
+</body>
+
+</html>
