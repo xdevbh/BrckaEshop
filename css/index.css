@@ -1,0 +1,46 @@
+.index h3 {
+    font-size: 1.4rem;
+}
+
+
+.index__banner {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.index__banner div {
+    position: absolute;
+    /* Position the background text */
+    bottom: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    /* Grey text */
+    width: 100%;
+    /* Full width */
+    padding: 20px;
+    /* Some padding */
+}
+
+
+.index__popularItems section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    .index__popularItems section {
+        flex-direction: row;
+    }
+}
