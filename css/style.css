@@ -5,7 +5,7 @@
 @import url(./contacts.css);
 @import url(./search-results-page.css);
 @import url(./order.css);
-
+@import url(./one-car-page.css);
 :root {
     --primary-color: #594ae2;
     --primary-light-color: #766ae7;
