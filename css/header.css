@@ -12,6 +12,7 @@
 
 .header__logo {
     display: block;
+    cursor: pointer;
 }
 
 .header__logo > img {
