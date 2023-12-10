@@ -10,14 +10,24 @@
     width: 100%;
 }
 
+.header__logo {
+    display: block;
+}
+
 .header__logo > img {
     width: 100px;
 }
-
+.header__logo
 .header__menuIcon {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .header__menuIcon {
+        display: none;
+    }
 }
 
 .header__mobMenuInner {
@@ -58,6 +68,13 @@
     align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+    .header__mobMenu {
+        display: none;
+    }
+    
+}
+
 .nav__link {
     font-size: 2rem;
     margin: 1rem;
@@ -65,16 +82,23 @@
     color: var(--primary-color);
 }
 
+.nav__link svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--primary-color);
+}
+
 .nav__link:hover {
     color: var(--primary-dark-color);
 }
+
+
 
 .header__search {
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .header__search input {
@@ -98,6 +122,59 @@
     fill: var(--primary-color);
 }
 
+.header__searchDesk {
+    display: none;
+}
+
 .nav__desktop {
     display: none;
 }
+
+.header__searchDesk input {
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    padding: 5px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.header__searchDesk button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header__searchDesk svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--primary-color);
+}   
+
+@media screen and (min-width: 768px) {
+    .header__mobMenu {
+        display: none;
+    }
+
+    .header__inner {
+        justify-content: space-between;
+    }
+
+    .nav__desktop {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav__link {
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .header__searchDesk {
+        display: flex;
+        width: 50%;
+    }
+}
+
