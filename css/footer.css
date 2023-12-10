@@ -1,0 +1,21 @@
+.footer {
+  background-color: var(--background-color);  
+  padding: 25px 0;
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__copyright {
+    color: var(--secondary-grey-color);
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footer__logo > img {
+    width: 100px;
+}

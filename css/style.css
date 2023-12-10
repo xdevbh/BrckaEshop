@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url(./reset.css);
 @import url(./header.css);
+@import url(./footer.css);
 
 :root {
     --primary-color: #594ae2;
@@ -10,6 +11,7 @@
     --secondary-color: #03a9f4;
     --secondary-light-color: #67daff;
     --secondary-dark-color: #007ac1;
+    --secondary-grey-color: #565656;
 
     --accent-color: #ff4081;
     --accent-light-color: #ff79b0;
