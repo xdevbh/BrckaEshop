@@ -13,5 +13,5 @@ const searchForm = document.querySelector("#searchForm");
 
 searchForm.addEventListener("submit", (e) => {
     
-    window.location.href = `search.html?search=${e.target[0].value}`;
+    window.location.href = `/search.html`;
 });

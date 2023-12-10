@@ -3,6 +3,7 @@
 @import url(./header.css);
 @import url(./footer.css);
 @import url(./contacts.css);
+@import url(./cart.css);
 
 :root {
     --primary-color: #594ae2;
@@ -28,6 +29,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
 }
 
 .container {
