@@ -13,6 +13,7 @@
 
     --background-color: #f5f5f5;
     --surface-color: #ffffff;
+    --black-background-color: #000;
 
     --text-primary-color: #0A0A0A;
     --text-secondary-color: #fff
@@ -45,6 +46,7 @@ select {
     margin: 10px;
     width: 100%;
 }
+
 select:focus {
     outline: none;
 }
@@ -52,12 +54,13 @@ select:focus {
 .btn {
     border: none;
     outline: 0;
-    padding: 2%;
     color: var(--text-secondary-color);
-    background-color: var(--primary-color);
+    background-color: var(--primary-dark-color);
     text-align: center;
     cursor: pointer;
-    width: 100%;
+    line-height: 30px;
+    width: 96%;
+    padding: 2%;
 }
 
 .btn:hover {
@@ -68,6 +71,7 @@ select:focus {
     display: flex;
     align-items: center;
     height: 50px;
+    margin-bottom: 2%;
 }
 
 .logo img {
@@ -130,7 +134,7 @@ nav ul li a:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: var(--on-background-color);
+    background-color: var(--black-background-color);
 }
 
 .overlay-content {
@@ -148,7 +152,7 @@ nav ul li a:hover {
     right: 45px;
     font-size: 60px;
     cursor: pointer;
-    color: var(--on-primary-color);
+    color: var(--text-secondary-color);
 }
 
 .overlay .closebtn:hover {
@@ -156,12 +160,12 @@ nav ul li a:hover {
 }
 
 .overlay input[type="text"] {
-    padding: 15px;
-    font-size: 17px;
+    padding: 3%;
     border: none;
     float: left;
-    width: 80%;
+    width: 94%;
     background: var(--background-color);
+    font-size: 1rem;
 }
 
 .overlay input[type="text"]:hover {
@@ -178,19 +182,22 @@ main {
 main header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2%;
 }
 
 .row {
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
+    margin-top: 2%;
 }
 
 .column {
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: column;
-    margin-right: 5%;
+    margin-right: 10px;
+    width: 100%;
 }
 
 
@@ -225,6 +232,8 @@ main header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-self: center;
+    width: 100%;
 }
 
 .item-card {
@@ -232,10 +241,11 @@ main header {
     display: flex;
     flex-direction: column;
     min-width: 200px;
+    max-width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 10px;
     justify-content: center;
-    max-width: 500px;
+
 }
 
 .item-image img {
@@ -246,6 +256,7 @@ main header {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+
 .item-info h3 {
     text-align: center;
     margin-bottom: 2%;
@@ -254,9 +265,11 @@ main header {
 .item-table {
     width: 100%;
 }
+
 .item-table td:first-child {
     text-align: left;
 }
+
 .item-table td:last-child {
     text-align: right;
 }
@@ -281,11 +294,113 @@ main header {
     cursor: pointer;
     margin: 10px;
 }
+
 .page-btn span:hover {
     opacity: 0.7;
 }
 
 
+.shopping-cart-items-table {
+    border: 0;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    background-color: var(--surface-color);
+}
+
+.shopping-cart-items-table thead {
+    display: none;
+}
+
+.shopping-cart-items-table tr {
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1em 1em 0.5em;
+}
+
+.shopping-cart-items-table tr+tr {
+    margin-top: 0.625em;
+}
+
+.shopping-cart-items-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.8em;
+    line-height: 1.35em;
+}
+
+.shopping-cart-items-table td input {
+    width: 40px;
+}
+
+.shopping-cart-items-table td:before {
+    content: attr(data-label);
+    font-size: 0.9em;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 45%;
+    color: #545454;
+}
+
+.shopping-cart-items-table td+td {
+    margin-top: 0.8em;
+}
+
+.shopping-cart-items-table td:first-child img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.shopping-cart-items-table td:last-child {
+    border-bottom: 0;
+}
+
+.shopping-cart-items-table input {
+    padding: 5px;
+}
+
+.shopping-cart-items-table td:not(:first-child){
+    height: 30px;
+}
+
+.small-container{
+    max-width: 80%;
+    margin: auto;
+}
+.small-container-filled {
+    max-width: 80%;
+    margin: auto;
+    background-color: var(--surface-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.total-price-table{
+    border: 0;
+    border-collapse: collapse;
+    margin: 1em 0 0 0;
+    padding: 1em;
+    width: 100%;
+    table-layout: fixed;
+    background-color: var(--surface-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.total-price-table td{
+    padding: 1em 1em 0.5em;
+}
+.total-price-table td:first-child{
+    text-transform: uppercase;
+}
+.total-price-table td:last-child{
+    text-align: right;
+}
 
 @media only screen and (min-width: 600px) {
     nav ul {
@@ -313,7 +428,61 @@ main header {
         flex-direction: column;
     }
 
+    main aside {
+        max-width: 300px;
+    }
+
     .item-catalog {
         flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+
+    .shopping-cart-items-table {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .shopping-cart-items-table thead {
+        display: table-header-group;
+        background-color: var(--primary-light-color);
+        color: var(--text-secondary-color);
+        height: 40px;
+    }
+
+    .shopping-cart-items-table tr {
+        display: table-row;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .shopping-cart-items-table th,
+    .shopping-cart-items-table td {
+        text-align: center;
+    }
+
+    .shopping-cart-items-table td:last-child {
+        text-align: right;
+        width: auto;
+        padding-right: 1em;
+    }
+
+    .shopping-cart-items-table th {
+        font-size: 0.85em;
+        text-transform: uppercase;
+    }
+
+    .shopping-cart-items-table td {
+        display: table-cell;
+    }
+
+    .shopping-cart-items-table td:before {
+        display: none;
+    }
+
+    .shopping-cart-items-table td:last-child {
+        width: auto;
+        text-align: right;
     }
 }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+
+        <nav>
+            <ul id="menuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="car-catalog.html">Cars</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+
+        <div class="left-nav-bar">
+            <a><img src="img/SearchIcon.svg" alt="Search" onclick="openSearch()"></a>
+            <a href="shopping-cart.html"><img src="img/ShoppingCartIcon.svg" alt="Shopping Cart"></a>
+            <a><img src="img/MenuIcon.svg" alt="Menu" class="menu-icon" onclick="menutoggle()"></a>
+        </div>
+
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <header>
+            <h1>Shopping cart</h1>
+        </header>
+
+        <div class="row">
+            <section class="column small-container">
+                <table class="shopping-cart-items-table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Car name</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label=""><img src="img/car1.png" href="" alt="Car #1"></td>
+                            <td data-label="Car name">
+                                <p>Car #1</p>
+                            </td>
+                            <td data-label="Quantity"><input type="number" value="1"></td>
+                            <td data-label="Price">$100 000</td>
+                            <td data-label=""><img src="img/deleteIcon.svg" alt="Delete"></td>
+                        </tr>
+                        <tr>
+                            <td data-label=""><img src="img/car1.png" href="" alt="Car #1"></td>
+                            <td data-label="Car name">
+                                <p>Car #1</p>
+                            </td>
+                            <td data-label="Quantity"><input type="number" value="1"></td>
+                            <td data-label="Price">$100 000</td>
+                            <td data-label=""><img src="img/deleteIcon.svg" alt="Delete"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="small-container-filled">
+
+                </div>
+
+                <table class="total-price-table">
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$200 000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$35 0000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$235.00</td>
+                    </tr>
+
+                </table>
+                <a href="#" class="btn">Proceed to checkout &#8594;</a>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
