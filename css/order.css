@@ -1,0 +1,60 @@
+
+
+
+/* Section Styles */
+.registration, .shipping, .payment {
+    background-color: var(--surface-color);
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.registration__title, .shipping__title, .payment__title {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.registration__form, .shipping__form, .payment__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__label, .shipping__label, .payment__label {
+    margin-bottom: 8px;
+    color: var(--secondary-grey-color);
+}
+
+.registration__input, .shipping__input, .payment__input,
+.shipping__select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Button Styles */
+.registration__button, .shipping__button, .payment__button {
+    padding: 12px;
+    background-color: var(--accent-color);
+    color: var(--text-secondary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration__button:hover, .shipping__button:hover, .payment__button:hover {
+    background-color: var(--accent-light-color);
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+    .registration, .shipping, .payment {
+        max-width: 500px;
+    }
+}
