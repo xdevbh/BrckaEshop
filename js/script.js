@@ -9,3 +9,9 @@ closeMenuButton.addEventListener("click", () => {
     document.querySelector(".header__mobMenu").classList.toggle("active");
 });
 
+const searchForm = document.querySelector("#searchForm");
+
+searchForm.addEventListener("submit", (e) => {
+    
+    window.location.href = `/search.html`;
+});
