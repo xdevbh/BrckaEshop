@@ -1,10 +1,10 @@
 /*One product*/
 .one-car h2{
-    font-size: 20px;
+    font-size: 1.6rem;
     font-weight: 900;
 }
 .one-car h1{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 1000;
 }
 .one-car__slider{
@@ -127,14 +127,14 @@
     margin: 10px;
  }
 
- .title {
+ .one-car__title {
     margin-top: 60px;
     text-align: center;
     position: relative;
     line-height: 60px;
     color: #555;
   }
-  .title::after {
+  .one-car__title::after {
     content: "";
     background: var(--primary-color);
     width: 80px;
@@ -145,7 +145,7 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  .new-cars-container {
+  .one-car__new-cars-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
