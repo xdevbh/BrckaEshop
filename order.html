@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brcka Shop</title>
     <link rel="stylesheet" href="./css/style.css" />
-
   </head>
   <body>
     <header class="header">
@@ -32,7 +31,7 @@
           <div class="header__mobMenuInner">
             <nav class="nav">
               <a class="nav__link" href="/">Home</a>
-              <a class="nav__link" href="./order.html">About</a>
+              <a class="nav__link" href="./catalog">About</a>
               <a class="nav__link" href="./contacts.html">Contacts</a>
               <a class="nav__link" href="./cart.html">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"/></svg>
@@ -80,8 +79,66 @@
       </div>
     </header>
     <main>
-      <!-- ТУТ ЕБАШИТЕ БАЗУ -->
-      <p>lorem1000</p>
+        
+<div class="container">
+    
+    <section class="registration">
+        <h2 class="registration__title">Register</h2>
+        <form class="registration__form">
+            <label for="reg-name" class="registration__label">Name:</label>
+            <input type="text" id="reg-name" class="registration__input" required>
+    
+            <label for="reg-email" class="registration__label">Email:</label>
+            <input type="email" id="reg-email" class="registration__input" required>
+    
+            <label for="reg-password" class="registration__label">Password:</label>
+            <input type="password" id="reg-password" class="registration__input" required>
+    
+            <button type="submit" class="registration__button">Register</button>
+        </form>
+    </section>
+    
+    <section class="shipping">
+        <h2 class="shipping__title">Shipping Information</h2>
+        <form class="shipping__form">
+            <label for="shipping-address" class="shipping__label">Address:</label>
+            <input type="text" id="shipping-address" class="shipping__input" required>
+    
+            <label for="shipping-city" class="shipping__label">City:</label>
+            <input type="text" id="shipping-city" class="shipping__input" required>
+    
+            <label for="shipping-postal-code" class="shipping__label">Postal Code:</label>
+            <input type="text" id="shipping-postal-code" class="shipping__input" required>
+    
+            <label for="shipping-country" class="shipping__label">Country:</label>
+            <select id="shipping-country" class="shipping__select" required>
+                <!-- Options for countries -->
+            </select>
+    
+            <button type="submit" class="shipping__button">Submit Shipping Info</button>
+        </form>
+    </section>
+    <section class="payment">
+        <h2 class="payment__title">Payment Methods</h2>
+        <form class="payment__form">
+            <label for="card-number" class="payment__label">Card Number:</label>
+            <input type="text" id="card-number" class="payment__input" required>
+    
+            <label for="card-name" class="payment__label">Cardholder Name:</label>
+            <input type="text" id="card-name" class="payment__input" required>
+    
+            <label for="expiry-date" class="payment__label">Expiry Date:</label>
+            <input type="month" id="expiry-date" class="payment__input" required>
+    
+            <label for="cvv" class="payment__label">CVV:</label>
+            <input type="text" id="cvv" class="payment__input" required>
+    
+            <button type="submit" class="payment__button">Submit Payment</button>
+        </form>
+    </section>
+    
+    
+</div>
     </main>
     <footer class="footer">
       <div class="container footer__inner">
